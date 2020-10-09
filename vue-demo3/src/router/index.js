@@ -12,6 +12,7 @@ Vue.use(VueRouter)
 // 构造路由实例
 const router = new VueRouter({
   routes: [
+    { path: '/', redirect: '/login' }, //网页重定向
     { path: '/Login', component: Login },
     { path: '/register', component: Register },
   ],
